@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body.modal-active .feed {
+    @apply overflow-hidden;
+  }
+}
+
+.react-modal-sheet-backdrop {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.react-modal-sheet-container {
+  --modal-height-offset-top: 30vh;
+  height: calc(100% - env(safe-area-inset-top) - var(--modal-height-offset-top)) !important;
+  /* 448px */
+  max-width: 28rem !important; 
+  margin: 0 auto !important;
+  inset: auto 0;
+}
+.react-modal-sheet-header {
+  /* custom styles */
+}
+.react-modal-sheet-drag-indicator {
+  /* custom styles */
+}
+.react-modal-sheet-content {
+  /* custom styles */
+}
